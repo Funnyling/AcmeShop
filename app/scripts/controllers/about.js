@@ -2,16 +2,12 @@
 
 /**
  * @ngdoc function
- * @name acmeshopApp.controller:AboutCtrl
+ * @name acmeShopApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the acmeshopApp
+ * Controller of the acmeShopApp
  */
-angular.module('acmeshopApp')
-  .controller('aboutController', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('acmeShopApp')
+  .controller('aboutController', function () {
+
   });

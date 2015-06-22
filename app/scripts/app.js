@@ -9,9 +9,9 @@
  * Main module of the application.
  */
 angular
-  .module('acmeshopApp', [
+  .module('acmeShopApp', [
     'ngResource',
-    'ui.router'
+    'ui.router',
   ])
   .config(['$stateProvider', function ($stateProvider) {
     $stateProvider
