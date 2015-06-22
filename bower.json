@@ -11,5 +11,21 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "acmeshopApp"
+  "moduleName": "acmeshopApp",
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "build",
+      "bower_components",
+      "vendor",
+      "karma",
+      "src",
+      "test",
+      "tests",
+      "grunt",
+      "Gruntfile.js",
+      "build.config.js",
+      "package.json",
+      ".bowerrc"
+  ]
 }
