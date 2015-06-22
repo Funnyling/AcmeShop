@@ -23,10 +23,16 @@ module.exports = function(config) {
     files: [
       // bower:js
       'bower_components/jquery/dist/jquery.js',
+      'bower_components/es5-shim/es5-shim.js',
       'bower_components/angular/angular.js',
-      'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/angular-cookies/angular-cookies.js',
       'bower_components/angular-resource/angular-resource.js',
-      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/angular-file-upload/angular-file-upload.js',
+      'bower_components/angular-ui-utils/ui-utils.js',
+      'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/jquery-ui/jquery-ui.js',
+      'bower_components/lodash/lodash.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

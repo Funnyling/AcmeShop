@@ -6,7 +6,6 @@
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
-var _ = require('lodash');
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically

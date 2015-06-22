@@ -8,7 +8,7 @@
  * Controller of the acmeshopApp
  */
 angular.module('acmeshopApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('aboutController', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

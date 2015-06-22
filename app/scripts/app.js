@@ -11,19 +11,27 @@
 angular
   .module('acmeshopApp', [
     'ngResource',
-    'ngRoute'
+    'ui.router'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+  .config(['$stateProvider', function ($stateProvider) {
+    $stateProvider
+      .state('main', {
+        url: '/',
+        views: {
+          content: {
+            controller: 'mainController',
+            templateUrl: 'views/main.html'
+          }
+        }
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
+      .state('about', {
+        url: '/about',
+        views: {
+          content: {
+            controller: 'aboutCtrl',
+            templateUrl: 'views/about.html'
+          }
+        }
+
       });
-  });
+  }]);
