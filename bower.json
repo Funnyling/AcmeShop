@@ -22,7 +22,6 @@
       "**/.*",
       "node_modules",
       "build",
-      "bower_components",
       "vendor",
       "karma",
       "src",
