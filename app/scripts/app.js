@@ -12,6 +12,7 @@ angular
   .module('acmeShopApp', [
     'ngResource',
     'ui.router',
+    'lodash'
   ])
   .config(['$stateProvider', function ($stateProvider) {
     $stateProvider
@@ -35,3 +36,17 @@ angular
 
       });
   }]);
+
+//fixme refactor this shit
+(function (angular, _) {
+  angular.module('lodash', [])
+    .service('_', function () {
+      return _;
+    });
+
+  if (_ === undefined) {
+    console.log('WARN: Не подключена библиотека loDash.');
+    return;
+  }
+
+}(angular, window._));

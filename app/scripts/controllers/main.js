@@ -8,7 +8,7 @@
  * Controller of the acmeShopApp
  */
 angular.module('acmeShopApp')
-  .controller('mainController', function ($scope) {
+  .controller('mainController', function ($scope, _) {
     $scope.products = [
       {
         'productId': 1,
@@ -39,4 +39,6 @@ angular.module('acmeShopApp')
         ],
         'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png'
       }];
+    var array = _.map($scope.products, 'cost');
+    console.log(array);
   });
