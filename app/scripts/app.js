@@ -28,7 +28,7 @@ angular
         url: '/about',
         views: {
           content: {
-            controller: 'aboutCtrl',
+            controller: 'aboutController',
             templateUrl: 'views/about.html'
           }
         }
